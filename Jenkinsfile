@@ -3,6 +3,13 @@ pipeline {
         label 'AGENT-1'
     }
     stages {
+        stage ('scan'){
+            steps {
+                script {
+                    echo 'building'
+                }
+            }
+        }
         stage ('build'){
             steps {
                 echo 'building'
